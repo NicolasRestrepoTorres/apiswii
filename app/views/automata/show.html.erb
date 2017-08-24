@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @automatum.title %>
+</p>
+
+<p>
+  <strong>Function:</strong>
+  <%= @automatum.function %>
+</p>
+
+<p>
+  <strong>Working:</strong>
+  <%= @automatum.working %>
+</p>
+
+<%= link_to 'Edit', edit_automatum_path(@automatum) %> |
+<%= link_to 'Back', automata_path %>

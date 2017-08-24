@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  variance: 1
+  name: MyString
+  readabilty: 1
+
+two:
+  variance: 1
+  name: MyString
+  readabilty: 1

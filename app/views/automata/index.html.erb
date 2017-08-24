@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Automata</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Function</th>
+      <th>Working</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @automata.each do |automatum| %>
+      <tr>
+        <td><%= automatum.title %></td>
+        <td><%= automatum.function %></td>
+        <td><%= automatum.working %></td>
+        <td><%= link_to 'Show', automatum %></td>
+        <td><%= link_to 'Edit', edit_automatum_path(automatum) %></td>
+        <td><%= link_to 'Destroy', automatum, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Automatum', new_automatum_path %>

@@ -1,0 +1,32 @@
+<%= form_with(model: automatum, local: true) do |form| %>
+  <% if automatum.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(automatum.errors.count, "error") %> prohibited this automatum from being saved:</h2>
+
+      <ul>
+      <% automatum.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title, id: :automatum_title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :function %>
+    <%= form.number_field :function, id: :automatum_function %>
+  </div>
+
+  <div class="field">
+    <%= form.label :working %>
+    <%= form.check_box :working, id: :automatum_working %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

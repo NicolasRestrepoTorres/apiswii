@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Variance:</strong>
+  <%= @languague.variance %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @languague.name %>
+</p>
+
+<p>
+  <strong>Readabilty:</strong>
+  <%= @languague.readabilty %>
+</p>
+
+<%= link_to 'Edit', edit_languague_path(@languague) %> |
+<%= link_to 'Back', languagues_path %>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  population: 1
+  existing: false
+  address: MyString
+
+two:
+  population: 1
+  existing: false
+  address: MyString
